@@ -1,0 +1,132 @@
+body {
+    font-family: system-ui, sans-serif;
+    color: #1f2937;
+    background-color: #aab9c9;
+}
+
+header {
+    background-color: #1d4ed8;
+    padding: 1rem;
+}
+
+a {
+    color: #0044ff;
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+nav a[aria-current="page"] {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+nav a:not([aria-current="page"]) {
+    color: #64748b;
+}
+
+nav a:hover {
+    color: #1e293b;
+}
+
+nav a:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+}
+
+h2+.card {
+    border-top: 3px solid #1d4ed8;
+}
+
+.badge {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.badge:empty {
+    display: none;
+}
+
+article:has(.badge:not(:empty)) {
+    border-color: #1d4ed8;
+    background-color: #eff6ff;
+}
+
+button[aria-label] {
+    background-color: transparent;
+    border: 1px solid #cbd5e1;
+    cursor: pointer;
+}
+
+header button[aria-label] {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+:root {
+    --color-primary-50: #DBE5FC;
+    --color-primary-100: #B6CBF8;
+    --color-primary-200: #92B1F5;
+    --color-primary-300: #6E97F2;
+    --color-primary-400: #497DEE;
+    --color-primary-500: #2563EB;
+    --color-primary-600: #134ED0;
+    --color-primary-700: #0F3EA6;
+    --color-primary-800: #0B2F7D;
+    --color-primary-900: #081F53;
+
+    --color-secondary-50: #FFE19F;
+    --color-secondary-100: #FFD780;
+    --color-secondary-200: #FFCD60;
+    --color-secondary-300: #FFC340;
+    --color-secondary-400: #FFB920;
+    --color-secondary-500: #FFAF00;
+    --color-secondary-600: #D59200;
+    --color-secondary-700: #AA7500;
+    --color-secondary-800: #805800;
+    --color-secondary-900: #553A00;
+
+    --color-neutral-50: #E0E1E3;
+    --color-neutral-100: #D1D2D5;
+    --color-neutral-200: #C1C3C7;
+    --color-neutral-300: #B2B4B9;
+    --color-neutral-400: #A2A5AB;
+    --color-neutral-500: #93969D;
+    --color-neutral-600: #747780;
+    --color-neutral-700: #575960;
+    --color-neutral-800: #3A3C40;
+    --color-neutral-900: #1D1E20;
+
+    --bg-page: var(--color-neutral-50);
+    --bg-card: #ffffff;
+    --text-main: var(--color-neutral-900);
+    --text-muted: var(--color-neutral-600);
+    --border-subtle: var(--color-neutral-200);
+    --brand: var(--color-primary-500);
+    --brand-hover: var(--color-primary-600);
+    --accent: var(--color-secondary-500);
+    --accent-surface: var(--color-secondary-100);
+
+    --color-accent-oklch: oklch(0.81 0.17 78);
+}
+
+.badge {
+    background-color: var(--color-accent-oklch);
+    color: var(--color-secondary-900);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
